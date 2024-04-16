@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="558.0" styleClass="main-bg" stylesheets="@Design/Mainforn.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mohinhquanlitiendien.Controller.DangNhapController">
+   <right>
+      <AnchorPane prefHeight="447.0" prefWidth="319.0" styleClass="main-bg" stylesheets="@Design/Mainforn.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="12.0" layoutY="11.0" prefHeight="427.0" prefWidth="295.0" stylesheets="@Design/Mainforn.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <Label layoutX="84.0" layoutY="55.0" stylesheets="@Design/Mainforn.css" text="Đăng Nhập" textFill="#1ca772">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tendangnhap" layoutX="73.0" layoutY="134.0" promptText="Tên Đăng Nhập" style="-fx-background-color: transpance; -fx-border-color: #1ca772; -fx-border-width: 0px 0px 2px 0px;" stylesheets="@Design/Mainforn.css">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="matkhau" layoutX="72.0" layoutY="209.0" promptText="Mật Khẩu" style="-fx-background-color: transpance; -fx-border-color: #1ca772; -fx-border-width: 0px 0px 2px 0px;" stylesheets="@Design/Mainforn.css">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></PasswordField>
+                  <Button fx:id="dangnhap" layoutX="108.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: #1ca772;" stylesheets="@Design/Mainforn.css" text="Đăng Nhập" textFill="#ebe9e9">
+                     <styleClass>
+                        <String fx:value="nav-btn" />
+                        <String fx:value="shadow" />
+                        <String fx:value="white-bg" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btdangky" layoutX="116.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: transpance; -fx-border-color: #1ca772; -fx-border-width: 2px 0px 2px 0px;" stylesheets="@Design/Mainforn.css" text="Đăng Ký" textFill="#1ca772">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></Button>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="34.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-user-32.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="34.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-password-26.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btdnthoat" layoutX="249.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: #ffffff;" textFill="WHITE" />
+                  <ImageView fitHeight="20.0" fitWidth="32.0" layoutX="271.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-close-26.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lbError" alignment="CENTER" layoutX="12.0" layoutY="245.0" prefHeight="17.0" prefWidth="265.0" textFill="#dd1111">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
